@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+
+        font-family: "Montserrat", sans-serif;
+    
+    }
+
+    :root{
+        --roxo-200:#8E35FF;
+        --roxo-300:#5A13B4;
+        --roxo-400:#3B1270;
+    }
+
+    a{
+        color: var(--roxo-300);
+    }
+
+    h1, h2, p{
+        color: var(--roxo-400);
+    }
+.menuNavegacao{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.inputHeader{
+    border:none;
+    color: var(--roxo-300)
+}
+
+.inputHeader:focus{
+    outline:none;
+}
+
+.inputHeader::placeholder{
+    color: var(--roxo-300);
+}
+
+.campoPesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--roxo-300);
+    opacity: 0.40;
+}
+
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menuNavegacao">
+                <li><a href="#"><img src="img/logo.png"></a></li>
+                <li><a href="#">Graduação</a></li>
+                <li><a href="#">Blog</a></li>
+                <li class="compoPesquisa"></li> <input class="inputHeader" placeholder="Buscar"><a href="#"><img src="img/lupa.svg"></a></li>
+                <li><a href="#"><img src="img/cadeado.svg">Ambiente Virtual</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
